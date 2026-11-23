@@ -1,0 +1,6 @@
+# Echte Objektdaten (Namen, Verbräuche, Zahlungen) gehören NICHT ins Repository.
+*.mieterstrom.json
+daten/
+*.pdf
+.DS_Store
+node_modules/

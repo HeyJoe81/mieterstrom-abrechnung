@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mieterstrom-Abrechnung</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <strong>Mieterstrom-Abrechnung</strong>
+    <span id="objektTitel" class="muted">keine Datei geöffnet</span>
+  </div>
+  <div class="actions">
+    <button id="btnNeu" type="button">Neu</button>
+    <button id="btnOeffnen" type="button">Öffnen …</button>
+    <button id="btnSpeichern" type="button" class="primary">Speichern</button>
+    <button id="btnSpeichernUnter" type="button">Speichern unter …</button>
+    <span id="status" class="muted"></span>
+  </div>
+  <input id="fileInput" type="file" accept=".json,application/json" hidden>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="abrechnung" class="active">Abrechnung</button>
+  <button data-tab="zaehler">Zähler &amp; Ablesungen</button>
+  <button data-tab="tarife">Tarife &amp; Verträge</button>
+  <button data-tab="abschlaege">Abschläge</button>
+  <button data-tab="objekt">Objekt</button>
+</nav>
+
+<main id="main"></main>
+
+<footer class="foot muted">
+  Die Daten bleiben auf Ihrem Rechner. Die App lädt und speichert nur die Datei, die Sie auswählen, und sendet nichts ins Internet.
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
